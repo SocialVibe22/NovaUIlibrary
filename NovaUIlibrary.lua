@@ -1027,43 +1027,43 @@ function Nova:CreateWindow(options)
                 
                 -- Create dropdown icon
                 local DropdownIcon = Instance.new("ImageLabel")
-DropdownIcon.Name = "DropdownIcon"
-DropdownIcon.Size = UDim2.new(0, 20, 0, 20)
-DropdownIcon.Position = UDim2.new(1, -25, 0.5, -10)
-DropdownIcon.BackgroundTransparency = 1
-DropdownIcon.Image = "rbxassetid://6031091004"
-DropdownIcon.ImageColor3 = Nova.CurrentTheme.Text
-DropdownIcon.Parent = DropdownButton
+                DropdownIcon.Name = "DropdownIcon"
+                DropdownIcon.Size = UDim2.new(0, 20, 0, 20)
+                DropdownIcon.Position = UDim2.new(1, -25, 0.5, -10)
+                DropdownIcon.BackgroundTransparency = 1
+                DropdownIcon.Image = "rbxassetid://6031091004"
+                DropdownIcon.ImageColor3 = Nova.CurrentTheme.Text
+                DropdownIcon.Parent = DropdownButton
 
-local OptionsFrame = Instance.new("Frame")
-OptionsFrame.Name = "OptionsFrame"
-OptionsFrame.Size = UDim2.new(1, 0, 0, 0)
-OptionsFrame.Position = UDim2.new(0, 0, 1, 5)
-OptionsFrame.BackgroundColor3 = Nova.CurrentTheme.Secondary
-OptionsFrame.BorderSizePixel = 0
-OptionsFrame.ClipsDescendants = true
-OptionsFrame.Visible = false
-OptionsFrame.ZIndex = 5
-OptionsFrame.Parent = DropdownButton
+                local OptionsFrame = Instance.new("Frame")
+                OptionsFrame.Name = "OptionsFrame"
+                OptionsFrame.Size = UDim2.new(1, 0, 0, 0)
+                OptionsFrame.Position = UDim2.new(0, 0, 1, 5)
+                OptionsFrame.BackgroundColor3 = Nova.CurrentTheme.Secondary
+                OptionsFrame.BorderSizePixel = 0
+                OptionsFrame.ClipsDescendants = true
+                OptionsFrame.Visible = false
+                OptionsFrame.ZIndex = 5
+                OptionsFrame.Parent = DropdownButton
 
-createCorner(OptionsFrame)
-createShadow(OptionsFrame, 15, 0.5, 4)
+                createCorner(OptionsFrame)
+                createShadow(OptionsFrame, 15, 0.5, 4)
 
-local OptionsHolder = Instance.new("ScrollingFrame")
-OptionsHolder.Name = "OptionsHolder"
-OptionsHolder.Size = UDim2.new(1, -10, 1, -10)
-OptionsHolder.Position = UDim2.new(0, 5, 0, 5)
-OptionsHolder.BackgroundTransparency = 1
-OptionsHolder.BorderSizePixel = 0
-OptionsHolder.ScrollBarThickness = 2
-OptionsHolder.ScrollBarImageColor3 = Nova.CurrentTheme.Accent
-OptionsHolder.ZIndex = 5
-OptionsHolder.Parent = OptionsFrame
+                local OptionsHolder = Instance.new("ScrollingFrame")
+                OptionsHolder.Name = "OptionsHolder"
+                OptionsHolder.Size = UDim2.new(1, -10, 1, -10)
+                OptionsHolder.Position = UDim2.new(0, 5, 0, 5)
+                OptionsHolder.BackgroundTransparency = 1
+                OptionsHolder.BorderSizePixel = 0
+                OptionsHolder.ScrollBarThickness = 2
+                OptionsHolder.ScrollBarImageColor3 = Nova.CurrentTheme.Accent
+                OptionsHolder.ZIndex = 5
+                OptionsHolder.Parent = OptionsFrame
 
-local OptionsList = Instance.new("UIListLayout")
-OptionsList.SortOrder = Enum.SortOrder.LayoutOrder
-OptionsList.Padding = UDim.new(0, 5)
-OptionsList.Parent = OptionsHolder
+                local OptionsList = Instance.new("UIListLayout")
+                OptionsList.SortOrder = Enum.SortOrder.LayoutOrder
+                OptionsList.Padding = UDim.new(0, 5)
+                OptionsList.Parent = OptionsHolder
 
 -- Create options
 local optionButtons = {}
